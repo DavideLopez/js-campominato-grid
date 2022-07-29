@@ -3,3 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #333 ;
+}
+
+main {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabellone {
+    flex-basis: 100%;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(10,1fr);
+    max-width: 800px;
+    aspect-ratio: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.square {
+    aspect-ratio: 1;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: tomato;
+    font-size: 2rem;
+}
+
+.square.clicked {
+    background-color: aqua;
+}
